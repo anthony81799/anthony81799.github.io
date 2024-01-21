@@ -126,7 +126,7 @@ code {
     margin-right: auto;
 }
 
-#profile {
+.profile {
     --darkreader-bg--tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
     --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
     box-shadow: var(--darkreader-bg--tw-ring-offset-shadow, 0 0 #0000), var(--darkreader-bg--tw-ring-shadow, 0 0 #0000), var(--darkreader-bg--tw-shadow);
@@ -135,7 +135,6 @@ code {
     opacity: 0.8;
     width: 60%;
     color: rgb(225, 223, 219);
-    /* margin-top: 40%; */
 }
 
 .text-center {
@@ -158,7 +157,7 @@ code {
     height: 2.5rem;
 }
 
-.blue-text {
+.blue-text, .blue-text:hover {
     color: rgb(69, 159, 246);
     fill: currentColor;
 }
@@ -192,4 +191,12 @@ img {
 #headshot {
     width: fit-content;
     height: fit-content;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.container {
+    width: 100%;
 }
