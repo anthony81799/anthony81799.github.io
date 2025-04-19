@@ -14,22 +14,25 @@ const projects = [
     getImageSrc: () => project1,
   },
   {
-    title: "React Infinite Scroll",
+    title: "Little Lemon Booking Website",
     description:
-      "A scrollable bottom sheet with virtualisation support, native animations at 60 FPS and fully implemented in JS land 🔥️",
+      "A mockup of a restaurant booking website, with a focus on the booking process and user experience. The website uses React, HTML, CSS, and JavaScript to create a responsive and user-friendly interface. The website allows users to specify the number of diners, select a date and time, and make a reservation.",
     getImageSrc: () => project2,
+    url: "https://github.com/anthony81799/reserve-table"
   },
   {
-    title: "Photo Gallery",
+    title: "Plant Shop",
     description:
-      "A One-stop shop for photographers to share and monetize their photos, allowing them to have a second source of income",
+      "A plant shopping website that allows users to browse and purchase a variety of plants online. The website features a user-friendly interface, with a clean and modern design that showcases the plants in an attractive way. The website includes a shopping cart, allowing users to add plants to their cart and proceed to checkout. React, Redux, and JavaScript are used to create a responsive and interactive experience.",
     getImageSrc: () => project3,
+    url: "https://github.com/anthony81799/e-plantShopping"
   },
   {
-    title: "Event planner",
+    title: "UML Diagram Generator",
     description:
-      "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps",
+      "A terminal and GUI application that allows users to create UML diagrams using a simple and intuitive interface. The application supports various types of UML diagrams, including class diagrams, sequence diagrams, and use case diagrams. Users can easily add and edit elements in the diagram, and export the diagram as an image or PDF file. The project is written is Java and uses Java Swing for the GUI.",
     getImageSrc: () => project4,
+    url: "https://github.com/anthony81799/2020sp-420-TeamAwesome"
   },
 ];
 
@@ -56,6 +59,7 @@ const ProjectsSection = () => {
             title={project.title}
             description={project.description}
             imageSrc={project.getImageSrc()}
+            url={project.url}
           />
         ))}
       </Box>

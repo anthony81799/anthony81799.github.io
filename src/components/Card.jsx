@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import PropTypes from 'prop-types';
 
-const Card = ({ title, description, imageSrc }) => {
+const Card = ({ title, description, imageSrc, url }) => {
   return (
     <VStack
       color="black"
@@ -22,8 +22,15 @@ const Card = ({ title, description, imageSrc }) => {
           {description}
         </Text>
         <HStack spacing={2} alignItems="center">
-          <p>See more</p>
-          <FontAwesomeIcon icon={faArrowRight} size="1x" />
+          <a
+            key={url}
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="see-more"
+          >
+            See More <FontAwesomeIcon icon={faArrowRight} size="1x" />
+          </a>
         </HStack>
       </VStack>
     </VStack>
@@ -34,6 +41,7 @@ Card.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   imageSrc: PropTypes.string.isRequired,
+  url: PropTypes.string,
 };
 
 export default Card;
