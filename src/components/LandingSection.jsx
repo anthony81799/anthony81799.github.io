@@ -4,7 +4,7 @@ import portfolioPic from "../images/Anthony_Mason.jpg";
 
 const greeting = "Hello, I am Anthony!";
 const bio1 = "A frontend developer";
-const bio2 = "specialised in React";
+const bio2 = "specialiszed in React";
 
 const LandingSection = () => (
 	<FullScreenSection
