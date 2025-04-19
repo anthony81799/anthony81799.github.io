@@ -5,4 +5,14 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: "/anthony81799.github.io",
   plugins: [react()],
+  esbuild: {
+    loader: "jsx"
+  },
+  optimizeDeps: {
+    esbuildOptions: {
+      loader: {
+        '.js': 'jsx',
+      }
+    }
+  }
 })
