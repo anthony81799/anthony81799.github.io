@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faLinkedin,
@@ -7,6 +8,10 @@ import {
 import { Box, HStack } from "@chakra-ui/react";
 
 const socials = [
+  {
+    icon: faEnvelope,
+    url: "mailto: anthony81799@gmail.com",
+  },
   {
     icon: faGithub,
     url: "https://github.com/anthony81799",
@@ -93,7 +98,7 @@ const Header = () => {
           <nav>
             <HStack spacing={8}>
               <button type="button" onClick={handleClick("projects")} style={{ background: "none", border: "none", color: "inherit", cursor: "pointer" }}>Projects</button>
-              <button type="button" onClick={handleClick("contactme")} style={{ background: "none", border: "none", color: "inherit", cursor: "pointer" }}>Contact Me</button>
+              {/* <button type="button" onClick={handleClick("contactme")} style={{ background: "none", border: "none", color: "inherit", cursor: "pointer" }}>Contact Me</button> */}
             </HStack>
           </nav>
         </HStack>

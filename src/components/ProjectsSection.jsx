@@ -1,18 +1,19 @@
 import FullScreenSection from "./FullScreenSection";
 import { Box, Heading } from "@chakra-ui/react";
 import Card from "./Card";
-import project1 from "../images/photo1.jpg";
+// import project1 from "../images/photo1.jpg";
 import project2 from "../images/photo2.jpg";
 import project3 from "../images/photo3.jpg";
 import project4 from "../images/photo4.jpg";
 
 const projects = [
-  {
-    title: "React Space",
-    description:
-      "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
-    getImageSrc: () => project1,
-  },
+  // {
+  // title: "Blogger",
+  // description:
+  // "Blogger is a blogging platform that allows users to create and share their own blogs. The platform is built using Angular, HTML, CSS, and JavaScript, and features a clean and modern design. Users can create an account, write and publish blog posts, and interact with other users through comments and likes.",
+  // getImageSrc: () => project1,
+  // url: "https://github.com/anthony81799/2020fa-406-MasonAnthony"
+  // },
   {
     title: "Little Lemon Booking Website",
     description:
