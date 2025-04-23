@@ -9,4 +9,4 @@ This repository stores my compiled portfolio of prgramming projects using langua
 - CSS
 - JavaScript
 - Java
-- Java Spring
+- Java Swing
