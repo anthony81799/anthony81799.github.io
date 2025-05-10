@@ -1,19 +1,19 @@
 import FullScreenSection from "./FullScreenSection";
 import { Box, Heading } from "@chakra-ui/react";
 import Card from "./Card";
-// import project1 from "../images/photo1.jpg";
+import project1 from "../images/photo1.jpg";
 import project2 from "../images/photo2.jpg";
 import project3 from "../images/photo3.jpg";
 import project4 from "../images/photo4.jpg";
 
 const projects = [
-  // {
-  // title: "Blogger",
-  // description:
-  // "Blogger is a blogging platform that allows users to create and share their own blogs. The platform is built using Angular, HTML, CSS, and JavaScript, and features a clean and modern design. Users can create an account, write and publish blog posts, and interact with other users through comments and likes.",
-  // getImageSrc: () => project1,
-  // url: "https://github.com/anthony81799/2020fa-406-MasonAnthony"
-  // },
+  {
+    title: "Medical Appointment Booking",
+    description:
+      "A web application that allows users to book medical appointments with doctors. The application features a user-friendly interface, allowing users to search for doctors by specialty, view their availability, and book appointments online. The application is built using React, HTML, CSS, JavaScript, and React.",
+    getImageSrc: () => project1,
+    url: "https://github.com/anthony81799/med-appt"
+  },
   {
     title: "Little Lemon Booking Website",
     description:
